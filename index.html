@@ -28,6 +28,7 @@
           <li><a href="#notes">文章目录</a></li>
           <li><a href="posts/first-page.html">网页制作笔记</a></li>
           <li><a href="posts/follow-a-link.html">计算机网络笔记</a></li>
+          <li><a href="#links">资料与工具</a></li>
           <li><a href="about.html">关于本站</a></li>
         </ul>
         <h2>小站档案</h2>
@@ -73,16 +74,35 @@
         </section>
         <section class="spaced" id="links" aria-labelledby="links-title">
           <h2 class="section-title" id="links-title">常用链接</h2>
-          <table>
-            <caption>放在这里，省得每次重新找。</caption>
-            <thead><tr><th scope="col">网站</th><th scope="col">可以看什么</th></tr></thead>
-            <tbody>
-              <tr><td><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">中国科学技术大学</a></td><td>学校主页、通知和新闻</td></tr>
-              <tr><td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN 的 HTML 文档</a></td><td>查标签用法，也有入门教程</td></tr>
-              <tr><td><a href="https://www.rfc-editor.org/" target="_blank" rel="noopener noreferrer">RFC Editor</a></td><td>查网络协议的原始文档</td></tr>
-              <tr><td><a href="https://www.gutenberg.org/" target="_blank" rel="noopener noreferrer">Project Gutenberg</a></td><td>找一些进入公版的英文书</td></tr>
-            </tbody>
-          </table>
+          <p class="small">找课程、读论文、写代码时用得上的一些入口。放在这里，省得下次重新找。</p>
+          <table class="resource-table"><caption>1. 课程与课件</caption><thead><tr><th scope="col">网站</th><th scope="col">什么时候用</th></tr></thead><tbody>
+            <tr><td><a href="https://cs336.stanford.edu/" target="_blank" rel="noopener noreferrer">CS336：Language Modeling from Scratch</a></td><td>从零实现语言模型，课程讲义与作业入口</td></tr>
+            <tr><td><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener noreferrer">CS224N：自然语言处理</a></td><td>NLP、深度学习与语言模型的课件和作业</td></tr>
+            <tr><td><a href="https://cs231n.github.io/" target="_blank" rel="noopener noreferrer">CS231n：计算机视觉</a></td><td>视觉课程笔记、神经网络基础和练习</td></tr>
+            <tr><td><a href="https://zh.d2l.ai/" target="_blank" rel="noopener noreferrer">动手学深度学习</a></td><td>中文教材，边读边跑代码</td></tr>
+            <tr><td><a href="https://missing.csail.mit.edu/" target="_blank" rel="noopener noreferrer">The Missing Semester</a></td><td>补一补命令行、Git、编辑器这些日常工具</td></tr>
+            <tr><td><a href="https://github.com/USTC-Resource/USTC-Course" target="_blank" rel="noopener noreferrer">科大课程资源</a></td><td>找课件、习题和历年课程资料</td></tr>
+          </tbody></table>
+          <table class="resource-table"><caption>2. 论文、模型与阅读</caption><thead><tr><th scope="col">网站</th><th scope="col">什么时候用</th></tr></thead><tbody>
+            <tr><td><a href="https://arxiv.org/" target="_blank" rel="noopener noreferrer">arXiv</a></td><td>找论文预印本，下载原文 PDF</td></tr>
+            <tr><td><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a></td><td>搜论文、查引用和相关工作</td></tr>
+            <tr><td><a href="https://openreview.net/" target="_blank" rel="noopener noreferrer">OpenReview</a></td><td>看会议投稿、评审意见与作者回复</td></tr>
+            <tr><td><a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Hugging Face</a></td><td>找模型权重、数据集和模型卡</td></tr>
+            <tr><td><a href="https://hjfy.top/" target="_blank" rel="noopener noreferrer">幻觉翻译 / hjfy.top</a></td><td>arXiv 论文和文档翻译</td></tr>
+            <tr><td><a href="https://zh.z-library.sk/" target="_blank" rel="noopener noreferrer">Z-Library</a></td><td>按书名、作者检索电子书</td></tr>
+          </tbody></table>
+          <table class="resource-table"><caption>3. 写作与代码</caption><thead><tr><th scope="col">网站</th><th scope="col">什么时候用</th></tr></thead><tbody>
+            <tr><td><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></td><td>找复现代码、项目源码，也可以翻 issue 排错</td></tr>
+            <tr><td><a href="https://docs.pytorch.org/docs/stable/" target="_blank" rel="noopener noreferrer">PyTorch 文档</a></td><td>查张量操作、训练接口和 API 用法</td></tr>
+            <tr><td><a href="https://www.overleaf.com/" target="_blank" rel="noopener noreferrer">Overleaf</a></td><td>在线写 LaTeX，合作修改论文和报告</td></tr>
+            <tr><td><a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">Zotero</a></td><td>整理文献、标注 PDF、生成参考文献</td></tr>
+          </tbody></table>
+          <table class="resource-table"><caption>4. 校内与网页文档</caption><thead><tr><th scope="col">网站</th><th scope="col">什么时候用</th></tr></thead><tbody>
+            <tr><td><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">中国科学技术大学</a></td><td>学校主页、通知和新闻</td></tr>
+            <tr><td><a href="https://www.icourse.club/" target="_blank" rel="noopener noreferrer">科大评课社区</a></td><td>查课程、看同学的课程评价</td></tr>
+            <tr><td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></td><td>写网页时查 HTML、CSS 和浏览器用法</td></tr>
+            <tr><td><a href="https://www.rfc-editor.org/" target="_blank" rel="noopener noreferrer">RFC Editor</a></td><td>查网络协议的原始规范</td></tr>
+          </tbody></table>
         </section>
         <p class="small spaced"><a href="#top">回到页首</a></p>
       </main>

@@ -88,6 +88,9 @@ blockquote { margin: 18px 0; padding: 5px 12px; border: 1px solid #aebdd1; backg
 .footnotes li { overflow-wrap: anywhere; }
 .table-scroll { max-width: 100%; overflow-x: auto; margin: 15px 0; }
 .article-table { min-width: 560px; }
+.resource-table caption { color: #000080; font-weight: bold; font-size: 15px; margin: 14px 0 5px; }
+.resource-table th:first-child, .resource-table td:first-child { width: 40%; }
+.resource-table td { overflow-wrap: anywhere; }
 .original .article-table p { text-indent: 0; font-size: 14px; line-height: 1.8; margin: 4px 0; }
 @media (max-width: 700px) {
   body { padding: 8px 5px; }

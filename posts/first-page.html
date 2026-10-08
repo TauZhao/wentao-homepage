@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从 HTML 的基本结构开始，记录图片、链接和外部样式表的用法。">
+  <title>从一个 HTML 文件开始 - 文陶的小站</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' fill='%23fffef9' stroke='%23315776' stroke-width='2'/%3E%3Cpath d='M8 9h16M8 15h16M8 21h10' stroke='%23315776' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="site">
+    <header class="masthead"><h1><a href="../index.html">文陶的小站</a></h1><p>几页笔记，几个链接。</p></header>
+    <nav class="navigation" aria-label="主导航"><a href="../index.html">首页</a><a href="../index.html#notes" aria-current="page">文章目录</a><a href="../index.html#links">常用链接</a><a href="../about.html">关于本站</a></nav>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>这篇文章</h2>
+        <ul><li><a href="#structure">先搭好结构</a></li><li><a href="#paths">图片与链接</a></li><li><a href="#css">把样式单独放好</a></li><li><a href="#check">最后检查一次</a></li></ul>
+        <h2>其他文章</h2><p><a href="follow-a-link.html">点开一个链接之后</a></p><p><a href="../index.html">返回首页</a></p>
+        <span class="stamp">NOTE / 001</span>
+      </aside>
+      <main class="content post" id="main">
+        <article>
+          <h2>从一个 HTML 文件开始</h2>
+          <p class="meta"><time datetime="2026-10-08">2026 年 10 月 8 日</time>　文陶　／　网页制作</p>
+          <p>一个网页可以从一个很普通的文本文件开始。给它取名 <code>index.html</code>，用浏览器打开，里面的文字就能显示出来。小站也是这样搭起来的。</p>
+          <h3 id="structure">先搭好结构</h3>
+          <p>下面是一个最小的例子。<code>head</code> 里放标题和字符编码，<code>body</code> 里放读者能看到的内容。中文页面记得声明 UTF-8，文件本身也要用 UTF-8 保存。</p>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="zh-CN"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;我的小站&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;欢迎光临&lt;/h1&gt;
+  &lt;p&gt;这是我的第一段文字。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p>标题用 <code>h1</code>、<code>h2</code> 等标签，正文用 <code>p</code>。先把内容按顺序写清楚，再去调整字体和颜色，会容易一些。</p>
+          <h3 id="paths">图片与链接</h3>
+          <p>插入图片用 <code>img</code>，其中 <code>src</code> 指向图片文件，<code>alt</code> 描述图片内容。首页的照片放在 <code>images</code> 文件夹里，引用的是相对路径。</p>
+          <pre><code>&lt;img src="images/autumn-lake.jpg"
+     alt="树林倒映在湖面上"&gt;
+&lt;a href="posts/first-page.html"&gt;阅读全文&lt;/a&gt;</code></pre>
+          <p>这里容易出错的是路径。从首页去文章页写 <code>posts/first-page.html</code>；从文章页回首页，要先用 <code>../</code> 返回上一层。文件名的大小写也要一致，换到服务器上以后尤其要注意。</p>
+          <h3 id="css">把样式单独放好</h3>
+          <p>本站的几个页面共用 <code>css/style.css</code>。修改这个文件，就能一起调整页面的背景、边框和字号，不用逐页找同一段样式。</p>
+          <pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;
+
+/* style.css 中的一条规则 */
+a { color: #174d85; }</code></pre>
+          <p>页面用了一个居中的外框，左边是导航，右边是正文。屏幕变窄时，正文和导航改成上下排列。表格只用来放“网站 / 用途”这样的数据。</p>
+          <h3 id="check">最后检查一次</h3>
+          <ul><li>每个链接都点开一次，看看目标对不对。</li><li>把整个文件夹复制到别处打开，确认没有误用本机的绝对路径。</li><li>缩窄浏览器窗口，看看文字、图片和表格有没有挤出去。</li><li>发布以后再看一遍，确认线上版本已经更新。</li></ul>
+          <p>页面做好以后，源码还是几份可以直接读的文件。以后想加一篇文章，复制一页、改掉标题和正文，再给首页加上链接就行。</p>
+          <p class="small">参考：<a href="https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax" target="_blank" rel="noopener noreferrer">MDN：HTML 基础语法</a>；<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/link" target="_blank" rel="noopener noreferrer">MDN：link 元素</a>。</p>
+        </article>
+        <div class="post-end"><a href="../index.html#notes">返回文章目录</a>　／　<a href="#top">回到页首</a></div>
+      </main>
+    </div>
+    <footer class="footer"><p>文陶的小站 · 始于 2026 年 10 月 · 手边的一点笔记</p></footer>
+  </div>
+</body>
+</html>

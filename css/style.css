@@ -1,0 +1,84 @@
+/* 全站共用的样式。颜色和宽度集中写在这里，方便修改。 */
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body {
+  margin: 0;
+  padding: 30px 16px;
+  color: #252a2e;
+  background: #dbe3e8;
+  font: 16px/1.9 "Songti SC", SimSun, "Noto Serif CJK SC", serif;
+}
+a { color: #174d85; text-decoration: underline; text-underline-offset: 3px; }
+a:visited { color: #674576; }
+a:hover { color: #a13d24; }
+a:focus-visible { outline: 2px solid #a13d24; outline-offset: 4px; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 16px; top: 4px; background: white; z-index: 10; }
+.site { max-width: 960px; margin: auto; border: 1px solid #6e8495; background: #fffef9; }
+.masthead { padding: 24px 30px 21px; border-top: 6px solid #315776; border-bottom: 1px solid #6e8495; }
+.masthead h1 { margin: 0; font-size: 32px; font-weight: 600; letter-spacing: 4px; color: #234762; }
+.masthead h1 a { color: inherit; text-decoration: none; }
+.masthead p { margin: 5px 0 0; font-size: 14px; color: #596872; }
+.navigation { display: flex; flex-wrap: wrap; border-bottom: 1px solid #6e8495; background: #e7edf1; padding: 0 19px; }
+.navigation a { display: block; padding: 7px 16px; font-size: 15px; }
+.navigation a[aria-current="page"] { font-weight: bold; background: #fffef9; }
+.layout { display: grid; grid-template-columns: 205px minmax(0, 1fr); }
+.sidebar { border-right: 1px solid #a6b2ba; padding: 22px 19px; background: #f0f3f4; font-size: 14px; }
+.sidebar h2 { font-size: 16px; margin: 0 0 10px; padding-bottom: 5px; border-bottom: 1px solid #a6b2ba; color: #315776; }
+.sidebar ul { list-style: square; margin: 7px 0 26px; padding-left: 20px; }
+.sidebar li { margin: 6px 0; }
+.sidebar p { margin: 8px 0; }
+.small { color: #626b72; font-size: 14px; }
+.stamp { display: inline-block; margin: 12px 0 8px; padding: 1px 9px; border: 1px solid #7e8e9a; background: white; font: 12px/1.7 "Courier New", monospace; color: #315776; }
+.content { min-width: 0; padding: 25px 30px 30px; }
+.section-title { margin: 0 0 14px; padding: 0 0 6px; border-bottom: 1px solid #b5bfc6; color: #315776; font-size: 21px; font-weight: 600; }
+.welcome { margin: 0 0 18px; }
+.notice { padding: 6px 10px; border: 1px dashed #9aa9b3; font-size: 14px; margin-bottom: 19px; background: #f3f5f3; }
+.photo { margin: 20px 0 25px; }
+.photo img { width: 100%; height: auto; display: block; padding: 4px; border: 1px solid #a1abb1; background: white; }
+.photo figcaption { font-size: 13px; text-align: right; color: #626b72; padding-top: 5px; }
+.entry { padding: 16px 0 18px; border-bottom: 1px dotted #a5afb6; }
+.entry:first-of-type { padding-top: 3px; }
+.entry h3 { font-size: 19px; font-weight: 600; margin: 0 0 3px; }
+.entry .date { color: #65717a; font-size: 13px; font-family: "Courier New", monospace; }
+.entry p { margin: 7px 0; }
+.entry .read { font-size: 14px; }
+.spaced { margin-top: 28px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 15px 0 8px; }
+caption { text-align: left; font-size: 14px; margin-bottom: 6px; }
+th, td { padding: 8px 10px; border: 1px solid #a6b2ba; text-align: left; vertical-align: top; }
+th { background: #edf1f3; font-weight: normal; color: #315776; }
+.footer { border-top: 1px solid #6e8495; padding: 13px 20px; text-align: center; font-size: 13px; color: #56636c; background: #e7edf1; }
+.footer p { margin: 0; }
+.post h2 { font-size: 26px; line-height: 1.5; font-weight: 600; color: #234762; margin: 0 0 7px; }
+.post .meta { font-size: 14px; color: #65717a; margin: 0 0 25px; padding-bottom: 12px; border-bottom: 1px solid #b5bfc6; }
+.post h3 { font-size: 20px; color: #315776; margin: 27px 0 9px; }
+.post p { margin: 12px 0; }
+.post ul, .post ol { padding-left: 25px; }
+.post li { margin: 8px 0; }
+code { font-family: "Courier New", monospace; font-size: .9em; background: #eff2f3; padding: 1px 3px; overflow-wrap: anywhere; }
+pre { border: 1px solid #bac3c9; background: #f0f3f4; padding: 12px 15px; overflow: auto; font: 14px/1.7 "Courier New", monospace; }
+pre code { padding: 0; background: none; overflow-wrap: normal; }
+blockquote { margin: 20px 0; padding: 5px 15px; border-left: 3px solid #7e96a8; color: #50616d; background: #f2f4f3; }
+.post-end { margin-top: 30px; border-top: 1px dotted #a5afb6; padding-top: 12px; font-size: 14px; }
+@media (max-width: 700px) {
+  body { padding: 12px 8px; }
+  .masthead { padding: 18px 20px; }
+  .masthead h1 { font-size: 27px; }
+  .navigation { padding: 0 5px; }
+  .navigation a { padding: 6px 12px; }
+  .layout { grid-template-columns: 1fr; }
+  .content { padding: 22px 19px; grid-row: 1; }
+  .sidebar { border-right: 0; border-top: 1px solid #a6b2ba; padding: 18px 19px; }
+  .sidebar ul { margin-bottom: 18px; }
+  th, td { padding: 6px; }
+}
+@media print {
+  body { background: white; padding: 0; }
+  .site { border: 0; max-width: none; }
+  .sidebar, .navigation, .skip { display: none; }
+  .layout { display: block; }
+  .content { padding: 20px 0; }
+  .masthead { padding: 10px 0; }
+  .footer { background: white; }
+}

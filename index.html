@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="文陶的小站，放一些计算机网络和网页制作的笔记。">
+  <title>文陶的小站 - 首页</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' fill='%23fffef9' stroke='%23315776' stroke-width='2'/%3E%3Cpath d='M8 9h16M8 15h16M8 21h10' stroke='%23315776' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body id="top">
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="site">
+    <header class="masthead">
+      <h1>文陶的小站</h1>
+      <p>几页笔记，几个链接。</p>
+    </header>
+    <nav class="navigation" aria-label="主导航">
+      <a href="index.html" aria-current="page">首页</a>
+      <a href="#notes">文章目录</a>
+      <a href="#links">常用链接</a>
+      <a href="about.html">关于本站</a>
+    </nav>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>站内导航</h2>
+        <ul>
+          <li><a href="#notes">最近写的东西</a></li>
+          <li><a href="posts/first-page.html">网页制作笔记</a></li>
+          <li><a href="posts/follow-a-link.html">计算机网络笔记</a></li>
+          <li><a href="about.html">关于本站</a></li>
+        </ul>
+        <h2>小站档案</h2>
+        <p>站长：文陶<br>开站：2026 年 10 月<br>内容：课程笔记</p>
+        <p class="small">写一点，存一点。以后忘了，还能回来翻翻。</p>
+        <span class="stamp">HTML + CSS</span>
+        <p class="small">欢迎下次再来。</p>
+      </aside>
+      <main class="content" id="main">
+        <h2 class="section-title">欢迎光临</h2>
+        <p class="welcome">这里是我的一个小网页。目前放了两篇笔记：一篇记网页怎么做，一篇记点击链接之后发生了什么。内容还不多，慢慢补。</p>
+        <div class="notice">站内消息：2026.10.08　小站开张，先把首页和两篇文章放上来。</div>
+        <figure class="photo">
+          <img src="images/autumn-lake.jpg" width="1280" height="853" alt="加拿大 Pink Lake 秋日湖景，黄色和橙色的树林倒映在平静的湖面上">
+          <figcaption>一张秋天的照片。<a href="https://commons.wikimedia.org/wiki/File:Pink_Lake_in_Autumn.jpg" target="_blank" rel="noopener noreferrer">Dwong33 / CC0</a></figcaption>
+        </figure>
+        <section id="notes" aria-labelledby="notes-title">
+          <h2 class="section-title" id="notes-title">最近写的东西</h2>
+          <article class="entry">
+            <h3><a href="posts/first-page.html">从一个 HTML 文件开始</a></h3>
+            <div class="date"><time datetime="2026-10-08">2026-10-08</time> / 网页制作</div>
+            <p>网页的第一步其实很小：写一个文件，起个标题，放一段文字。再把图片、链接和样式一点点加进去，首页就有了。</p>
+            <a class="read" href="posts/first-page.html">阅读全文</a>
+          </article>
+          <article class="entry">
+            <h3><a href="posts/follow-a-link.html">点开一个链接之后</a></h3>
+            <div class="date"><time datetime="2026-10-08">2026-10-08</time> / 计算机网络</div>
+            <p>点一下鼠标，页面就出来了。把这个过程拆开看，会遇到域名、连接、HTTP 请求，以及网页里那些单独加载的图片。</p>
+            <a class="read" href="posts/follow-a-link.html">阅读全文</a>
+          </article>
+        </section>
+        <section class="spaced" id="links" aria-labelledby="links-title">
+          <h2 class="section-title" id="links-title">常用链接</h2>
+          <table>
+            <caption>放在这里，省得每次重新找。</caption>
+            <thead><tr><th scope="col">网站</th><th scope="col">可以看什么</th></tr></thead>
+            <tbody>
+              <tr><td><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener noreferrer">中国科学技术大学</a></td><td>学校主页、通知和新闻</td></tr>
+              <tr><td><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN 的 HTML 文档</a></td><td>查标签用法，也有入门教程</td></tr>
+              <tr><td><a href="https://www.rfc-editor.org/" target="_blank" rel="noopener noreferrer">RFC Editor</a></td><td>查网络协议的原始文档</td></tr>
+              <tr><td><a href="https://www.gutenberg.org/" target="_blank" rel="noopener noreferrer">Project Gutenberg</a></td><td>找一些进入公版的英文书</td></tr>
+            </tbody>
+          </table>
+        </section>
+        <p class="small spaced"><a href="#top">回到页首</a></p>
+      </main>
+    </div>
+    <footer class="footer"><p>文陶的小站 · 始于 2026 年 10 月 · 手边的一点笔记</p></footer>
+  </div>
+</body>
+</html>

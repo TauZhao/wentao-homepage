@@ -61,6 +61,17 @@ pre { border: 1px solid #bac3c9; background: #f0f3f4; padding: 12px 15px; overfl
 pre code { padding: 0; background: none; overflow-wrap: normal; }
 blockquote { margin: 20px 0; padding: 5px 15px; border-left: 3px solid #7e96a8; color: #50616d; background: #f2f4f3; }
 .post-end { margin-top: 30px; border-top: 1px dotted #a5afb6; padding-top: 12px; font-size: 14px; }
+.original p { text-indent: 2em; overflow-wrap: anywhere; line-height: 2; }
+.original .meta, .original .subtitle, .original .editor-note, .original .reference { text-indent: 0; }
+.original .subtitle { margin: -1px 0 12px; color: #596872; }
+.original .editor-note { font-size: 14px; padding: 9px 12px; border: 1px dashed #a6b2ba; color: #596872; }
+.original h3 { scroll-margin-top: 15px; }
+.original-figure { margin: 22px 0; text-align: center; }
+.original-figure img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 1px solid #c3c9cc; }
+.original sup { font-size: 12px; }
+.footnotes { border-top: 1px solid #b5bfc6; margin-top: 28px; font-size: 14px; }
+.footnotes li { overflow-wrap: anywhere; }
+.photo img { max-height: 270px; object-fit: cover; object-position: center; }
 @media (max-width: 700px) {
   body { padding: 12px 8px; }
   .masthead { padding: 18px 20px; }

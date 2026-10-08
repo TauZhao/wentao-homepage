@@ -47,7 +47,7 @@ a:focus-visible { outline: 2px dotted #cc0000; outline-offset: 3px; }
 .ticker { display: block; width: max-content; max-width: none; animation: announcement 22s linear infinite; }
 @keyframes announcement { from { transform: translateX(10%); } to { transform: translateX(-45%); } }
 .photo { margin: 12px 0 17px; }
-.photo img { display: block; width: 100%; height: 190px; object-fit: cover; object-position: center; padding: 4px; border: 3px ridge #b0b0b0; background: #eee; }
+.photo img { display: block; width: 100%; height: 190px; object-fit: cover; object-position: center 38%; padding: 4px; border: 3px ridge #b0b0b0; background: #eee; }
 .photo figcaption { font-size: 12px; text-align: center; color: #555; padding-top: 3px; }
 .entry { margin: 0; padding: 10px 6px 11px; border-bottom: 1px dotted #969696; }
 .entry:nth-of-type(even) { background: #f2f7ff; }
@@ -82,9 +82,13 @@ blockquote { margin: 18px 0; padding: 5px 12px; border: 1px solid #aebdd1; backg
 .original h3 { scroll-margin-top: 12px; }
 .original-figure { margin: 20px 0; text-align: center; }
 .original-figure img { max-width: 100%; height: auto; display: block; margin: 10px auto; border: 2px ridge #bbb; }
+.original-figure figcaption { color: #444; font-size: 13px; line-height: 1.7; margin: 5px 0 14px; }
 .original sup { font-size: 12px; }
 .footnotes { border-top: 1px dotted #888; margin-top: 25px; font-size: 14px; }
 .footnotes li { overflow-wrap: anywhere; }
+.table-scroll { max-width: 100%; overflow-x: auto; margin: 15px 0; }
+.article-table { min-width: 560px; }
+.original .article-table p { text-indent: 0; font-size: 14px; line-height: 1.8; margin: 4px 0; }
 @media (max-width: 700px) {
   body { padding: 8px 5px; }
   .site { padding: 2px; border-width: 3px; }
